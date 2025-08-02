@@ -10,18 +10,24 @@ public class UniversidadContext
     public List<Profesor> Profesores { get; set; } = new List<Profesor>();
     public List<Cursos> Cursos { get; set; } = new List<Cursos>();
 
-    // Método 1: Agregar profesor
-    public void AgregarProfesor(Profesor profesor)
-    {
-        profesor.Id = Profesores.Count + 1;
-        Profesores.Add(profesor);
-    }
+        // Método 1: Agregar profesor
+        public void AgregarProfesor(Profesor profesor)
+        {
+            profesor.Id = Profesores.Count + 1;
+            Profesores.Add(profesor);
+        }
 
-    // Método 2: Agregar curso
-    public void AgregarCurso(Curso curso)
+        // Método 2: Agregar curso
+        public void AgregarCurso(Curso curso)
+        {
+            curso.Id = Cursos.Count + 1;
+            Cursos.Add(curso);
+        }
+    // Método 3: Buscar estudiante por email (insensible a mayúsculas)
+    public Estudiante BuscarEstudiantePorEmail(string email)
     {
-        curso.Id = Cursos.Count + 1;
-        Cursos.Add(curso);
+        return Estudiantes
+            .FirstOrDefault(e => e.Email.Equals(email, StringComparison.OrdinalIgnoreCase));
     }
 
     // Método 3: Agregar estudiante
