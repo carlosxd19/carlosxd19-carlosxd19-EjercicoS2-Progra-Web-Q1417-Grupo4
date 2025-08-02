@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\carlos\\OneDrive\\Escritorio\\UNIVERSIDAD CEUTEC DE CARLOS CRUZ\\INGENIERIA EN INFORM\u00C1TICA\\PROGRAMACION WEB\\SEMANA 2\\ejercicioSemana2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01F67112-7E38-43D0-B336-7D3D88B705CD}|ejercicioSemana2\\ejercicioSemana2.csproj|c:\\users\\carlos\\onedrive\\escritorio\\universidad ceutec de carlos cruz\\ingenieria en inform\u00E1tica\\programacion web\\semana 2\\ejerciciosemana2\\ejerciciosemana2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F67112-7E38-43D0-B336-7D3D88B705CD}|ejercicioSemana2\\ejercicioSemana2.csproj|solutionrelative:ejerciciosemana2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\carlos\\OneDrive\\Escritorio\\UNIVERSIDAD CEUTEC DE CARLOS CRUZ\\INGENIERIA EN INFORM\u00C1TICA\\PROGRAMACION WEB\\SEMANA 2\\ejercicioSemana2\\ejercicioSemana2\\Program.cs",
+              "RelativeDocumentMoniker": "ejercicioSemana2\\Program.cs",
+              "ToolTip": "C:\\Users\\carlos\\OneDrive\\Escritorio\\UNIVERSIDAD CEUTEC DE CARLOS CRUZ\\INGENIERIA EN INFORM\u00C1TICA\\PROGRAMACION WEB\\SEMANA 2\\ejercicioSemana2\\ejercicioSemana2\\Program.cs",
+              "RelativeToolTip": "ejercicioSemana2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T23:52:05.815Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
