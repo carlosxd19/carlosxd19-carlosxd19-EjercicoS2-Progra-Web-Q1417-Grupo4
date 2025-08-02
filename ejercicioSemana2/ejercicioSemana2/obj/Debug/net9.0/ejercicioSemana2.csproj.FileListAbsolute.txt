@@ -12,3 +12,8 @@ C:\Users\carlos\OneDrive\Escritorio\UNIVERSIDAD CEUTEC DE CARLOS CRUZ\INGENIERIA
 C:\Users\carlos\OneDrive\Escritorio\UNIVERSIDAD CEUTEC DE CARLOS CRUZ\INGENIERIA EN INFORMÁTICA\PROGRAMACION WEB\SEMANA 2\ejercicioSemana2\ejercicioSemana2\obj\Debug\net9.0\ejercicioSemana2.pdb
 C:\Users\carlos\OneDrive\Escritorio\UNIVERSIDAD CEUTEC DE CARLOS CRUZ\INGENIERIA EN INFORMÁTICA\PROGRAMACION WEB\SEMANA 2\ejercicioSemana2\ejercicioSemana2\obj\Debug\net9.0\ejercicioSemana2.genruntimeconfig.cache
 C:\Users\carlos\OneDrive\Escritorio\UNIVERSIDAD CEUTEC DE CARLOS CRUZ\INGENIERIA EN INFORMÁTICA\PROGRAMACION WEB\SEMANA 2\ejercicioSemana2\ejercicioSemana2\obj\Debug\net9.0\ref\ejercicioSemana2.dll
+C:\Users\carlos\Documents\branch carlos 1\carlosxd19-carlosxd19-EjercicoS2-Progra-Web-Q1417-Grupo4\ejercicioSemana2\ejercicioSemana2\obj\Debug\net9.0\ejercicioSemana2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlos\Documents\branch carlos 1\carlosxd19-carlosxd19-EjercicoS2-Progra-Web-Q1417-Grupo4\ejercicioSemana2\ejercicioSemana2\obj\Debug\net9.0\ejercicioSemana2.AssemblyInfoInputs.cache
+C:\Users\carlos\Documents\branch carlos 1\carlosxd19-carlosxd19-EjercicoS2-Progra-Web-Q1417-Grupo4\ejercicioSemana2\ejercicioSemana2\obj\Debug\net9.0\ejercicioSemana2.AssemblyInfo.cs
+C:\Users\carlos\Documents\branch carlos 1\carlosxd19-carlosxd19-EjercicoS2-Progra-Web-Q1417-Grupo4\ejercicioSemana2\ejercicioSemana2\obj\Debug\net9.0\ejercicioSemana2.csproj.CoreCompileInputs.cache
+C:\Users\carlos\Documents\branch carlos 1\carlosxd19-carlosxd19-EjercicoS2-Progra-Web-Q1417-Grupo4\ejercicioSemana2\ejercicioSemana2\obj\Debug\net9.0\ejercicioSemana2.sourcelink.json

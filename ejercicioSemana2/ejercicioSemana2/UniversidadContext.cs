@@ -3,31 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-public class UniversidadContext
+namespace Universidad
+{
+    public class UniversidadContext
 {
     public List<Estudiante> Estudiantes { get; set; } = new List<Estudiante>();
     public List<Profesor> Profesores { get; set; } = new List<Profesor>();
-    public List<Cursos> Cursos { get; set; } = new List<Cursos>();
+    public List<Curso> Cursos { get; set; } = new List<Curso>();
 
-        // Método 1: Agregar profesor
-        public void AgregarProfesor(Profesor profesor)
-        {
-            profesor.Id = Profesores.Count + 1;
-            Profesores.Add(profesor);
-        }
+    // Método para agregar estudiantes (tu lógica original)
+    public void agregar(Estudiante estudiante)
+    {
+        estudiante.Id = Estudiantes.Count + 1;
+        Estudiantes.Add(estudiante);
+    }
 
-        // Método 2: Agregar curso
-        public void AgregarCurso(Curso curso)
-        {
-            curso.Id = Cursos.Count + 1;
-            Cursos.Add(curso);
-        }
-    // Método 3: Buscar estudiante por email (insensible a mayúsculas)
+    // Método 1: Agregar profesor
+    public void AgregarProfesor(Profesor profesor)
+    {
+        profesor.Id = Profesores.Count + 1;
+        Profesores.Add(profesor);
+    }
+
+    // Método 2: Agregar curso
+    public void AgregarCurso(Curso curso)
+    {
+        curso.Id = Cursos.Count + 1;
+        Cursos.Add(curso);
+    }
+
+    // Método 3: Buscar estudiante por email
     public Estudiante BuscarEstudiantePorEmail(string email)
     {
-        return Estudiantes
-            .FirstOrDefault(e => e.Email.Equals(email, StringComparison.OrdinalIgnoreCase));
+        return Estudiantes.FirstOrDefault(e =>
+            e.Email.Equals(email, StringComparison.OrdinalIgnoreCase));
     }
 
     // Método 4: Obtener profesores por especialización
@@ -40,10 +49,48 @@ public class UniversidadContext
             .ToList();
     }
 
-    // Método: Agregar estudiante
-    public void agregar(Estudiante estudiante)
+    // Método 5: Actualizar unidades valorativas
+    public bool ActualizarUnidadesValorativas(int cursoId, int nuevasUnidades)
     {
-        estudiante.Id = Estudiantes.Count + 1; // Auto-incremento ID
-        Estudiantes.Add(estudiante);
+        var curso = Cursos.FirstOrDefault(c => c.Id == cursoId);
+        if (curso == null)
+        {
+            Console.WriteLine("Curso no encontrado.");
+            return false;
+        }
+
+        if (nuevasUnidades < 1 || nuevasUnidades > 4)
+        {
+            Console.WriteLine("Las unidades valorativas deben estar entre 1 y 4.");
+            return false;
+        }
+
+        curso.UnidadesValorativas = nuevasUnidades;
+        Console.WriteLine($"Curso '{curso.Nombre}' actualizado correctamente.");
+        return true;
     }
+}
+
+public class Estudiante
+{
+    public int Id { get; set; }
+    public string Nombre { get; set; }
+    public string Email { get; set; }
+    public bool Activo { get; set; }
+}
+
+public class Profesor
+{
+    public int Id { get; set; }
+    public string Nombre { get; set; }
+    public string Especializacion { get; set; }
+}
+
+public class Curso
+{
+    public int Id { get; set; }
+    public string Nombre { get; set; }
+    public int UnidadesValorativas { get; set; }
+    public int ProfesorId { get; set; }
+}
 }
