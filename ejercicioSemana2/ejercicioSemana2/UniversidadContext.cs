@@ -30,7 +30,17 @@ public class UniversidadContext
             .FirstOrDefault(e => e.Email.Equals(email, StringComparison.OrdinalIgnoreCase));
     }
 
-    // Método 3: Agregar estudiante
+    // Método 4: Obtener profesores por especialización
+    public List<Profesor> ObtenerProfesoresPorEspecializacion(string especializacion)
+    {
+        return Profesores
+            .Where(p => p.Especializacion != null &&
+                        p.Especializacion.IndexOf(especializacion, StringComparison.OrdinalIgnoreCase) >= 0)
+            .OrderBy(p => p.Nombre)
+            .ToList();
+    }
+
+    // Método: Agregar estudiante
     public void agregar(Estudiante estudiante)
     {
         estudiante.Id = Estudiantes.Count + 1; // Auto-incremento ID
